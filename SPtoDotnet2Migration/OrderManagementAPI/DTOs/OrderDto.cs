@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace OrderManagementAPI.DTOs
 {
     public class OrderDto
@@ -17,10 +19,24 @@ namespace OrderManagementAPI.DTOs
     
     public class CreateOrderDto
     {
+        [Required]
+        [MaxLength(100)]
         public string CustomerName { get; set; } = string.Empty;
+        
+        [Required]
+        [MaxLength(100)]
+        [EmailAddress]
         public string CustomerEmail { get; set; } = string.Empty;
+        
+        [Required]
+        [MaxLength(100)]
         public string ProductName { get; set; } = string.Empty;
+        
+        [Required]
+        [Range(1, int.MaxValue, ErrorMessage = "Quantity must be greater than 0")]
         public int Quantity { get; set; }
+        
+        [Required]
         public DateTime OrderDate { get; set; }
     }
 }
