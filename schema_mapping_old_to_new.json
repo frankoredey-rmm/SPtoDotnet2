@@ -1,0 +1,46 @@
+{ 
+    "mappings": [
+        {
+            "source_table": "CustomerOrders",
+            "source_column": "CustomerName",
+            "target_table": "Customers",
+            "target_column": "Name",
+            "transformation": "direct"
+        },
+        {
+            "source_table": "CustomerOrders",
+            "source_column": "CustomerEmail",
+            "target_table": "Customers",
+            "target_column": "Email",
+            "transformation": "direct"
+        },
+        {
+            "source_table": "CustomerOrders",
+            "source_column": "ProductName",
+            "target_table": "Products",
+            "target_column": "ProductName",
+            "transformation": "direct"
+        },
+        {
+            "source_table": "CustomerOrders",
+            "source_column": "Quantity",
+            "target_table": "OrderItems",
+            "target_column": "Quantity",
+            "transformation": "direct"
+        },
+        {
+            "source_table": "CustomerOrders",
+            "source_column": "OrderID",
+            "target_table": "Orders",
+            "target_column": "OrderID",
+            "transformation": "direct"
+        },
+        {
+            "source_table": "CustomerOrders",
+            "source_column": "OrderDate",
+            "target_table": "Orders",
+            "target_column": "OrderDate",
+            "transformation": "direct"
+        }
+    ]
+}
