@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderManagementAPI</name>
+    </assembly>
+    <members>
+        <member name="M:OrderManagementAPI.Controllers.OrdersController.GetOrdersByCustomerEmail(System.String)">
+            <summary>
+            Get all orders by customer email
+            </summary>
+            <param name="email">Customer email address</param>
+            <returns>List of orders for the specified customer</returns>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrdersController.CreateOrder(OrderManagementAPI.DTOs.CreateOrderDto)">
+            <summary>
+            Create a new order
+            </summary>
+            <param name="orderDto">Order creation data</param>
+            <returns>Created order ID</returns>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrdersController.DeleteOrder(System.Int32)">
+            <summary>
+            Delete an order by ID
+            </summary>
+            <param name="id">Order ID to delete</param>
+            <returns>Success status</returns>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrdersController.GetAllOrders">
+            <summary>
+            Get all orders
+            </summary>
+            <returns>List of all orders</returns>
+        </member>
+    </members>
+</doc>
